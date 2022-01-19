@@ -1,0 +1,97 @@
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.card-container,
+.add-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 250px;
+  background-color: rgb(216, 216, 216);
+  padding: 10px;
+  border-radius: 20px;
+  height: 120px;
+}
+.add-card {
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.add-card:hover {
+  background-color: rgb(192, 192, 192);
+}
+.newUser {
+  z-index: 1;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(253, 164, 131);
+  padding: 20px;
+  border-radius: 20px;
+  width: 350px;
+}
+.userDetail label {
+  width: 100%;
+}
+.userDetail label input {
+  width: 326px;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+.form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.form-btn input {
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
